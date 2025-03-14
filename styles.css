@@ -1,0 +1,237 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/photo/blueback.jpg);
+    
+}
+
+.background-wrapper {
+    max-width: 1700px; /* Чтобы контент не растягивался на весь экран */
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.description {
+    max-width: 800px; 
+    text-align: center; 
+    background: linear-gradient(130deg, #cfa8e0, #c8b8d1); 
+    padding: 20px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: 40px auto; 
+}
+
+.description h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase; /* Делаем заглавными */
+    border-bottom: 3px solid #ffbb00; /* Подчеркивание */
+    display: inline-block; /* Чтобы подчеркивание было по ширине текста */
+    padding-bottom: 5px;
+}
+
+.description p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6; /* Улучшенная читаемость */
+    margin-top: 10px;
+}
+
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* Растягиваем карточки */
+}
+.team-member {
+    background-color: white;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 570px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(130deg, #e3e3e2, #ffffff);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+
+}
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 19px;
+    margin: 5px 0;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px; 
+}
+
+
+.team-member .content {
+    flex-grow: 1; /* Растягивает контент */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Чтобы список не раздвигал карточку */
+}
+
+
+.tasks {
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    text-align: left;
+    width: 100%;
+    padding-left: 0;
+    max-height: 80px;
+}
+
+.tasks li {
+    padding: 5px 0;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    list-style-position: inside;
+    align-items: left;
+}
+
+
+.social,
+.number {
+    margin-top: auto;
+}
+
+.telegram-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f0e4a8;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(101, 101, 101, 0.4);
+}
+
+.telegram-button img,
+.number img {
+    width: 20px;
+    height: 20px;
+    margin-top: 9px;
+}
+
+.telegram-button:hover,
+.number:hover {
+    background-color: #FFDD2D;
+    box-shadow: 0 6px 15px rgba(92, 92, 93, 0.6);
+}
+
+/* Стили для номера телефона */
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+    gap: 8px;
+    background-color: #f0e4a8;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(101, 101, 101, 0.4);
+    width: 180px;
+}
+
+/* Адаптив для мобильных устройств */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .description {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .description h3 {
+        font-size: 24px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
+        margin: 10px 0;
+        height: auto;
+        padding: 15px;
+    }
+
+    .team-member img {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .team-member h3 {
+        font-size: 18px;
+    }
+
+    .team-member p {
+        font-size: 14px;
+    }
+
+    .telegram-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .telegram-button img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .number {
+        padding: 8px 15px;
+        font-size: 14px;
+        width: 160px;
+    }
+
+    .number img {
+        width: 16px;
+        height: 16px;
+    }
+}

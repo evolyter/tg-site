@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lysian: Команда</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+        <style>
+            .team-member {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
+
+            .team-member.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .team-member img {
+                opacity: 0;
+                transform: scale(0.9);
+                transition: opacity 0.6s ease-out 0.3s, transform 0.6s ease-out 0.3s;
+            }
+
+            .team-member.visible img {
+                opacity: 1;
+                transform: scale(1);
+            }
+        </style>
+    </head>
+    <body>
+            <div class="side-background left"></div> <!-- Левая боковая вставка -->
+            <div class="side-background right"></div> <!-- Правая боковая вставка -->
+        <div class="description">
+            <h3>Состав команды "Lysian"</h3>
+            <p>Lisyan - расширение, анализирующее товары на китайских маркетплейсах и прогнозирующее их востребованность в России. </p>
+        </div>
+            
+        <div class="background-wrapper">
+        <section class="team">
+            <div class="team-member">
+                <img src="/photo/team/vitaliy.jpg" alt="vitaliy">
+                <h3>Лим Виталий </h3>
+                    <p>Frontend-разработчик </p>
+                    <p>yifanset2602@gmail.com</p>
+                    <li>TeamLead</li>
+                    <li>Основная часть Frontend</li>
+              
+                <div class="social">
+                    <a href="https://t.me/yifanset" target="_blank" class="telegram-button">
+                        <img src="/photo/tele.png" alt="Telegram">
+                        <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="/photo/team/alexander1.jpg " alt="alexandr">
+                <h3>Артемьев Александр</h3>
+                    <p>Frontend-разработчик</p>
+                    <p>evoluter2@gmail.com</p>
+                    <li>Лендинг</li>
+                    <li>Страница личного кабинета</li>
+                    
+                <div class="social">
+                    <a href="https://t.me/arta1ex14" target="_blank" class="telegram-button">
+                        <img src="/photo/tele.png" alt="Telegram">
+                        <span>Telegram</span>
+                    </a>
+                </div> 
+            </div>
+
+            <div class="team-member">
+                <img src="/photo/team/sergei.jpg" alt="sergei">
+                <h3>Дудник Сергей</h3>
+                    <p>Backend-разработчик на Python</p>
+                    <p>studnik05@mail.ru</p>
+                    <li>Наставничество</li>
+                    <li>Решение технических проблем</li>
+
+                <div class="social">
+                    <a href="https://t.me/money_alipay" target="_blank" class="telegram-button">
+                        <img src="/photo/tele.png" alt="Telegram">
+                        <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="team-member">
+                <img src="/photo/team/petr.jpg" alt="petr">
+                <h3>Червяков Петр</h3>
+                <p>Backend-разработчик на Python</p>
+                <p>petrcervakov6@gmail.com</p>
+                <li>Back-end разработка</li>
+                <li>Помощь в создании бд</li>
+                <div class="social">
+                    <a href="https://t.me/Peter1028qwe" target="_blank" class="telegram-button">
+                        <img src="/photo/tele.png" alt="Telegram">
+                        <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="/photo/team/anastasiya.jpg" alt="anastasiya">
+                <h3>Лихоманова Анастасия</h3>
+                <p>Backend-разработчик на Python</p>
+                <p>nastya.likhomanova2003@gmail.com</p>
+                <li>Дизайн</li>
+                <li>Презентация</li>
+                <div class="social">
+                    <a href="https://t.me/ahmeoriapeuda" target="_blank" class="telegram-button">
+                        <img src="/photo/tele.png" alt="Telegram">
+                        <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="/photo/team/dasha.jpg" alt="dasha">
+                <h3>Попова Дарья</h3>
+                <p>Backend-разработчик на Python </p>
+                <p>dashksspil@gmail.com</p>
+                <li>Back-end разработка</li>
+                <li>Реализация аунтефикации</li>
+                <div class="social">
+                    <a href="https://t.me/aaaa_shaaa" target="_blank" class="telegram-button">
+                        <img src="/photo/tele.png" alt="Telegram">
+                        <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="/photo/team/igor1.jpg" alt="igor1">
+                <h3>Игорь Стоев</h3>
+                <p>Работа с ИИ</p>
+                <p>igorstoev17@gmail.com</p>
+                <li>Разработка парсера</li>
+                <li>Формирование датасета</li>
+
+                <div class="social">
+                    <a href="https://t.me/sad_manyt" target="_blank" class="telegram-button">
+                        <img src="/photo/tele.png" alt="Telegram">
+                        <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="/photo/team/roman.jpg" alt="roman">
+                <h3>Васильев Роман</h3>
+                <p>Работа с ИИ</p>
+                <p>spawn9716@gmail.com</p>
+                <li>Написание парсера</li>
+                <li>Помощь в создании бд</li>
+                <div class="social">
+                    <a href="https://t.me/Omega_base99" target="_blank" class="telegram-button">
+                        <img src="/photo/tele.png" alt="Telegram">
+                        <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="/photo/team/marina.jpg" alt="marina">
+                <h3>Панюкова Марина</h3>
+                <p>Работа с ИИ</p>
+                <p>panukovamarina83@gmail.com</p>
+                <li>Создание бд</li>
+
+                <div class="social">
+                    <a href="https://t.me/marinadick1" target="_blank" class="telegram-button">
+                        <img src="/photo/tele.png" alt="Telegram">
+                        <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="/photo/team/mihail.jpg" alt="mihail">
+                <h3>Фрик Михаил</h3>
+                <p>Тестировщик</p>
+                <p>mihailfrik56@gmail.com</p>
+                <li>Создание тест-кейсов</li>
+                <li>Ручное тестирование</li>
+                <div class="social">
+                    <a href="https://t.me/gg_budet1" target="_blank" class="telegram-button">
+                        <img src="/photo/tele.png" alt="Telegram">
+                        <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="/photo/team/igor2.jpg" alt="igor2">
+                <h3>Епишин Игорь</h3>
+                <p>Тестировщик</p>
+                <p>i.epishin@mail.ru</p>
+                <li>Подготовка тестовой документации</li>
+                <li>Ручное тестирование</li>
+                <div class="social">
+                    <a href="https://t.me/Igorek732" target="_blank" class="telegram-button">
+                        <img src="/photo/tele.png" alt="Telegram">
+                        <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        </div>
+
+        <script>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            document.querySelectorAll('.team-member').forEach(member => {
+                observer.observe(member);
+            });
+        </script>
+
+    </body>
+</html>
